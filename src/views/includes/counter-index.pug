@@ -1,0 +1,25 @@
+//- In 'includes' all paths to assets should be relative to the index.pug file,
+//- like so './images/image.jpg',
+//- and not '../images/image.jpg'
+
+counterIndex
+  section.ftco-section.ftco-no-pt.ftco-no-pb.ftco-volunteer
+  .container
+    .row
+      .col-md-7.img-volunteer(style='background-image: url(../../../../assets/images/about-1.jpg);')
+        .row.no-gutters.justify-content-end
+          .col-lg-7
+            .text.py-5.pl-md-4.pr-md-3
+              h2.mb-4 Alarma social solidaria
+              p Pretendemos que todas las personas puedan ejercer sus derechos y estén capacitadas para disfrutar de una vida digna.
+              p
+                a.btn.btn-primary.py-3.px-4(href='#') &Uacute;nete ahora
+      .col-md-5.d-flex.align-items-center.bg-alert.border-6
+        .about-text.py-5.pl-md-5
+          h2
+            | Donaci&oacute;n hasta el momento 
+            span &euro;
+            strong.number(data-number='380000') 0
+          p Siempre estamos cerca de quienes más nos necesitan.
+          p
+            a.btn.btn-black.py-3.px-4(href='#') Dona ahora

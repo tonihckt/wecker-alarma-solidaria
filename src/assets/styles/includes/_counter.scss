@@ -1,0 +1,71 @@
+// VOLUNTEER
+.ftco-volunteer{
+	.text{
+		h2{
+			font-weight: 900;
+			font-size: 50px;
+			line-height: 1.1;
+			color: $black;
+		}
+	}
+	.img-volunteer{
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: top center;
+		@include media-breakpoint-up(lg){
+			margin-top: -70px;
+		}
+	}
+	.about-text{
+		h2{
+			font-weight: 900;
+			font-size: 50px;
+			line-height: 1.1;
+			color: $white;
+			strong,span{
+				font-weight: 900;
+				color: rgba(255,255,255,.2);
+			}
+		}
+	}
+}
+
+#section-counter{
+	position: relative;
+	z-index: 0;
+	&:after{
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		content: '';
+		z-index: -1;
+		opacity: 0;
+		background: $black;
+	}
+}
+.ftco-counter {
+	// padding: 6em 0;
+	@include media-breakpoint-down(lg){
+		background-position: center center !important;
+	}
+	.img{
+		display: block;
+		width: 100%;
+		@include media-breakpoint-down(md){
+			height: 400px;
+			background-position: top center !important;
+		}
+	}
+	.block-18{
+	}
+	.heading-section{
+		h2{
+			span{
+				font-weight: 900;
+				color: rgba(0,0,0,.3);
+			}
+		}
+	}
+}

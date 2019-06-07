@@ -1,0 +1,41 @@
+//- Master layout
+
+doctype html
+html(lang='en')
+  head
+
+    //- Meta
+    include includes/meta.pug
+
+    //- Basic Seo
+    include includes/basicSeo.pug
+
+    //- Twitter
+    include includes/twitter.pug
+
+    //- Facebook
+    include includes/facebook.pug
+
+    //- Favicons
+    include includes/favicons.pug
+
+    //- Preload fonts
+    include includes/preloadFonts.pug
+
+    //- Title
+    block title
+      title Your project!
+
+    //- Styles
+    include includes/loadCss.pug
+
+  body
+
+    //- block content
+    block content
+
+    //- Footer
+    //- include ../components/footer.pug
+
+    //- block scripts
+    block scripts

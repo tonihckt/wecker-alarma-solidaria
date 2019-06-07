@@ -1,0 +1,192 @@
+//TESTIMONY
+.testimony-section{
+	position: relative;
+	background: $secondary;
+	.testimony-img{
+		display: block;
+		width: 100%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: top center;
+		@include media-breakpoint-up(lg){
+			margin-top: -150px;
+		}
+	}
+	.overlay{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		content: '';
+		opacity: .7;
+		background: $darken;
+		// @include gradient-background();
+	}
+	.owl-carousel{
+		margin: 0;
+	}
+	.owl-carousel .owl-stage-outer{
+		padding-top: 0;
+		padding-bottom: 0;
+		position: relative;
+	}
+	.owl-nav {
+		position: absolute;
+		bottom: 60px !important;
+		left: 0;
+		right: 0;
+		// max-width: 1200px;
+		margin: 0 auto;
+		@include media-breakpoint-down(md){
+			display: none;
+		}
+		.owl-prev,
+		.owl-next {
+			position: absolute;
+			width: 60px;
+			height: 60px;
+			background: $white !important;
+			@include transition(.7s);
+			span {
+				&:before {
+					font-size: 20px;
+					margin-top: 7px;
+					color: $black;
+				}
+			}
+			opacity: 1;
+		}
+		.owl-prev {
+			top: 0 !important;
+			right: 0 !important;
+			@include media-breakpoint-up(lg){
+				right: 61px !important;
+			}
+			&:hover, &:focus{
+				background: $black !important;
+				outline: none !important;
+				span {
+					&:before {
+						font-size: 20px;
+						margin-top: 7px;
+						color: $white;
+					}
+				}
+			}
+		}
+		.owl-next {
+			top: 0 !important;
+			right: 0 !important;
+			@include media-breakpoint-up(lg){
+				right: 0 !important;
+			}
+			&:hover, &:focus{
+				background: $black !important;
+				outline: none !important;
+				span {
+					&:before {
+						font-size: 24px;
+						margin-top: 7px;
+						color: $white;
+					}
+				}
+			}
+		}
+	}
+	.owl-dots {
+		// text-align: center;
+		.owl-dot {
+			width: 10px;
+			height: 10px;
+			margin: 5px;
+			border-radius: 50%;
+			background: rgba(255,255,255,.3);
+			&.active {
+				background: $white;
+			}
+		}
+	}
+}
+.testimony-wrap{
+	display: block;
+	position: relative;
+	color: $color-title;
+	font-size: 20px;
+	.user-img{
+		width: 80px;
+		height: 80px;
+		border-radius: (50%);
+		position: relative;
+		background-position: top center;
+		.quote{
+			position: absolute;
+			bottom: -10px;
+			right: 0;
+			width: 40px;
+			height: 40px;
+			background: $primary;
+			@include border-radius(50%);
+			i{
+				color: $white;
+			}
+		}
+	}
+	.text{
+		padding-top: 6em;
+		margin-top: -65px;
+		@include border-radius(4px);
+	}
+	p{
+		// font-size: 20px;
+	}
+	.name{
+		font-weight: 400;
+		margin-bottom: 0;
+		color: $color-title;
+		font-weight: 800;
+		font-size: 20px;
+	}
+	.position{
+		font-size: 18px;
+		color: $color-title;
+	}
+}
+
+.about-image{
+	@include media-breakpoint-down(sm){
+		height: 400px;
+		margin-bottom: 30px;
+	}
+}
+
+.heading-section{
+	.subheading{
+		font-size: 18px;
+		display: block;
+		margin-bottom: 5px;
+	}
+	h2{
+		font-size: 50px;
+		font-weight: 900;
+		line-height: 1.1;
+		span{
+			font-weight: 400;
+		}
+		@include media-breakpoint-down(sm){
+			font-size: 28px;
+		}
+	}
+	&.heading-section-white{
+		.subheading{
+			color: rgba(255,255,255,.9);
+		}
+		h2{
+			font-size: 40px;
+			color: $color-title;
+		}
+		p{
+			color: rgba(255,255,255,.9);
+		}
+	}
+}

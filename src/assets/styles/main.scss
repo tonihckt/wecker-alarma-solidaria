@@ -1,0 +1,77 @@
+// @import 'normalize.css';
+
+
+/*
+  Bootstrap
+*/
+@import './libs/bootstrap/bootstrap';
+@import './libs/bootstrap/variables';
+
+/*
+  Base
+*/
+
+// @import './base/fonts';
+@import './base/variables';
+@import './base/general';
+
+
+
+
+/*
+  Utils
+*/
+@import './utils/mixins';
+@import './utils/sections';
+
+/*
+  Components
+*/
+@import './components/button';
+@import './components/footer';
+@import './components/header';
+@import './components/hero';
+@import './components/loder';
+
+
+/*
+  Components
+*/
+@import './includes/counter';
+@import './includes/services';
+@import './includes/causes';
+@import './includes/testimony';
+@import './includes/contact';
+@import './includes/form';
+@import './includes/blog';
+
+
+// /*
+//   Layout
+// */
+// @import './styles/layout/page';
+// @import './styles/layout/general';
+
+// /*
+//   Pages
+// */
+// @import './styles/pages/index';
+// @import './styles/pages/blog';
+// @import './styles/pages/contact';
+
+
+
+
+
+// @import '../includes/header/header.scss';
+// @import '../includes/hero/hero.scss';
+// @import '../includes/footer/footer.scss';
+// @import 'button';
+// @import 'sections';
+// @import '../includes/sections/counter/counter.scss';
+// @import '../includes/sections/services/services.scss';
+// @import '../includes/sections/causes/causes.scss';
+// @import '../includes/sections/testimony/testimony.scss';
+
+
+

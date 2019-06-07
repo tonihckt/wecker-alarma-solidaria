@@ -1,0 +1,50 @@
+doctype html
+html(lang="en")
+  head
+    title Wecker
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(href='https://fonts.googleapis.com/css?family=Skranji:400,700&display=swap' rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900&display=swap' rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&display=swap' rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Asap:400,500,600,700&display=swap' rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Codystar:300,400&display=swap' rel='stylesheet')
+    link(rel='stylesheet' href='src/assets/styles/libs/open-iconic-bootstrap.min.css')
+    link(rel='stylesheet' href='src/assets/styles/libs/animate.css')
+    link(rel='stylesheet' href='src/assets/styles/libs/owl.carousel.min.css')
+    link(rel='stylesheet' href='src/assets/styles/libs/owl.theme.default.min.css')
+    link(rel='stylesheet' href='src/assets/styles/libs/magnific-popup.css')
+    link(rel='stylesheet' href='src/assets/styles/libs/aos.css')
+    link(rel='stylesheet' href='src/assets/styles/libs/ionicons.min.css')
+    link(rel='stylesheet' href='src/assets/styles/libs/bootstrap-datepicker.css')
+    link(rel='stylesheet' href='src/assets/styles/libs/jquery.timepicker.css')
+    link(rel='stylesheet' href='src/assets/styles/libs/flaticon.css')
+    link(rel='stylesheet' href='src/assets/styles/libs/icomoon.css')
+  body
+    include views/components/header.pug
+ 
+    //- include views/includes/breadcrumbs.pug
+    include views/includes/counter-about.pug
+    include views/includes/services-about.pug
+    include views/includes/mission-about.pug
+
+
+    include views/components/footer.pug
+
+//- include views/componets/loader.pug
+script(src='src/assets/scripts/libs/jquery.min.js')
+script(src='src/assets/scripts/libs/jquery-migrate-3.0.1.min.js')
+script(src='src/assets/scripts/libs/popper.min.js')
+script(src='src/assets/scripts/libs/bootstrap.min.js')
+script(src='src/assets/scripts/libs/jquery.easing.1.3.js')
+script(src='src/assets/scripts/libs/jquery.waypoints.min.js')
+script(src='src/assets/scripts/libs/jquery.stellar.min.js')
+script(src='src/assets/scripts/libs/owl.carousel.min.js')
+script(src='src/assets/scripts/libs/jquery.magnific-popup.min.js')
+script(src='src/assets/scripts/libs/aos.js')
+script(src='src/assets/scripts/libs/jquery.animateNumber.min.js')
+script(src='src/assets/scripts/libs/scrollax.min.js')
+script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false')
+script(src='src/assets/scripts/libs/google-map.js')
+script(src='src/assets/scripts/main.js')

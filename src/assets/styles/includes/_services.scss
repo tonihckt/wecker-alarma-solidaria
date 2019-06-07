@@ -1,0 +1,46 @@
+
+//SERVICES
+.services-section{
+	padding: 0;
+}
+.services{
+	@include transition(.3s);
+	padding: 40px 25px;
+	@include media-breakpoint-down(md){
+		padding: 10px 0;
+	}
+	.icon{
+		line-height: 1.3;
+		position: relative;
+		span{
+			font-size:60px;
+			color: rgba(0,0,0,.2);
+		}
+	}
+	.media-body{
+		h3{
+			font-size: 22px;
+			font-weight: 900;
+		}
+	}
+	@include media-breakpoint-up(lg){
+		&.active{
+			background: $primary;
+			color: $black;
+			.icon{
+				span{
+					color: $white;
+				}
+			}
+		}
+	}
+	&:hover, &:focus{
+		background: $primary;
+		color: $black;
+		.icon{
+			span{
+				color: $white;
+			}
+		}
+	}
+}

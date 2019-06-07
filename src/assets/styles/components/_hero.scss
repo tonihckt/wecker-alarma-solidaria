@@ -1,0 +1,130 @@
+.hero-wrap{
+	width: 100%;
+	height: 800px;
+	position: inherit;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-color: antiquewhite;
+	@include media-breakpoint-down(lg){
+		background-position: top center !important;
+	}
+	.overlay{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		content: '';
+		opacity: .1;
+		background: $white;
+		height: 800px;
+		@include media-breakpoint-down(lg){
+			opacity: 0;
+		}
+	}
+	&.hero-wrap-2{
+		height: 800px;
+		.overlay{
+			background: $black;
+			width: 100%;
+			opacity: .3;
+			height: 800px;
+		}
+		.slider-text{
+			height: 800px;
+		}
+	}
+}
+
+.slider-text{
+	position: relative;
+	height: 800px;
+	h1 {
+    //neon
+    // font-family:$font-clock;
+    // text-shadow: 0px 0px 9px #000;
+		font-size: 54px;
+		color: $white;
+		line-height: 1.2;
+		font-weight: 900;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+    text-shadow: -1px 0 #40514e, 0 1px #40514e, 1px 0 #40514e, 0 -1px #40514e;
+		@include media-breakpoint-down(md) {
+			font-size: 40px;
+		}
+	}
+	p {
+		font-size: 20px;
+		line-height: 1.5;
+		font-weight: 300;
+		color: rgba(255,255,255,.8);
+		strong{
+			font-weight: 700;
+			a{
+				color: $black;
+			}
+		}
+	}
+	.play-video{
+		position: relative;
+		@include media-breakpoint-up(md){
+			height: 800px;
+			p{
+				writing-mode: vertical-lr;
+			  transform: rotate(180deg);
+			  text-orientation: sideways;
+			  text-align:left;
+			  margin: 0rem;
+			  position: absolute;
+			  top: -10em;
+			  left: 0;
+			  height: 100%;
+			  z-index: 1;
+			  font-size: 16px;
+			  text-transform: uppercase;
+			  letter-spacing: 2px;
+			  a{
+					color: $white;
+					text-shadow: -1px 0 #40514e, 0 1px #40514e, 1px 0 #40514e, 0 -1px #40514e;
+			  }
+			  .icon{
+			  	font-size: 16px;
+			  	padding-bottom: 10px;
+			  	i{
+			  		padding: 20px 15px;
+			  		background: $color-primary;
+			  		@include border-radius(3px);
+			  	}
+			  }
+			}
+		}
+	}
+	.breadcrumbs{
+		font-size: 16px;
+		margin-bottom: 20px;
+		z-index: 99;
+		font-weight: 400;
+		span{
+			color: #6193C0;
+			i{
+				color: #6193C0;
+			}
+			a{
+				color: #6193C0;
+				&:hover, &:focus{
+					color: $primary;
+					i{
+						color: $primary;
+					}
+				}
+			}
+		}
+	}
+	.bread{
+		font-weight: 900;
+		color: $color-title;
+		font-size: 60px;
+	}
+}

@@ -1,0 +1,46 @@
+.contact-section {
+	.contact-info{
+		p{
+			color: rgba(0,0,0,.8);
+			font-weight: 700;
+			a{
+				color: rgba(0,0,0,.8);
+			}
+			span{}
+		}
+	}
+	.box{
+		width: 100%;
+		display: block;
+		// background: $primary;
+		.icon{
+			width: 100px;
+			height: 100px;
+			background: $white;
+			margin: 0 auto;
+			margin-bottom: 2em;
+			@include border-radius(50%);
+			span{
+				color: $black;
+				font-size: 30px;
+			}
+		}
+		h3{
+			font-size: 18px;
+			font-weight: 900;
+		}
+	}
+	.contact-form{
+		width: 100%;
+	}
+}
+.block-9 {
+
+	.form-control {
+		outline: none!important;
+		box-shadow: none!important;
+		font-size: 15px;
+	}
+	#map {
+	}
+}
